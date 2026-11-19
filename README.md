@@ -19,15 +19,7 @@ Code, configuration and measured data for the paper "A Regulator-Centric Blockch
 
 ## Why the reports are one archive
 
-The reports of all official runs, 18 main runs and 9 extra runs (Caliper logs and HTML reports), take about 1.6 GB of the 1.7 GB of this package. We therefore pack the folder `official/reports` into one archive and keep all other files as plain text. The files inside the archive are not modified. The extracted folder is listed in `.gitignore`, so it is not committed by mistake.
-
-```bash
-# check the file(s) first, then join the parts if the archive is split
-sha256sum -c SHA256SUMS --ignore-missing
-cat official/reports.zip.part-* > official/reports.zip   # only if split
-# extract
-unzip official/reports.zip -d official
-```
+The reports of all official runs, 18 main runs and 9 extra runs (Caliper logs and HTML reports), take about 1.6 GB of the 1.7 GB of this package. We therefore pack the folder `official/reports` into one archive and keep all other files as plain text. 
 
 
 ## Naming
