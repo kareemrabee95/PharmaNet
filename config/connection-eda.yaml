@@ -1,0 +1,122 @@
+name: connection-eda
+version: "1.0"
+
+client:
+  organization: eda
+  connection:
+    timeout:
+      peer:
+        endorser: 300
+      orderer: 300
+
+channels:
+  pharmachannel:
+    orderers:
+      - orderer1.pharma-network.com
+      - orderer2.pharma-network.com
+      - orderer3.pharma-network.com
+    peers:
+      peer0.eda.pharma-network.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+      peer1.eda.pharma-network.com:
+        endorsingPeer: false
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+      peer0.manufacturer.pharma-network.com:
+        endorsingPeer: true
+        chaincodeQuery: false
+        ledgerQuery: false
+        eventSource: false
+      peer0.distributor.pharma-network.com:
+        endorsingPeer: true
+        chaincodeQuery: false
+        ledgerQuery: false
+        eventSource: false
+      peer0.retailer.pharma-network.com:
+        endorsingPeer: true
+        chaincodeQuery: false
+        ledgerQuery: false
+        eventSource: false
+
+organizations:
+  eda:
+    mspid: EdaOrgMSP
+    peers:
+      - peer0.eda.pharma-network.com
+      - peer1.eda.pharma-network.com
+    certificateAuthorities:
+      - ca.eda.pharma-network.com
+  manufacturer:
+    mspid: manufacturerMSP
+    peers:
+      - peer0.manufacturer.pharma-network.com
+  distributor:
+    mspid: distributorMSP
+    peers:
+      - peer0.distributor.pharma-network.com
+  retailer:
+    mspid: retailerMSP
+    peers:
+      - peer0.retailer.pharma-network.com
+
+orderers:
+  orderer1.pharma-network.com:
+    url: grpcs://orderer1.pharma-network.com:7050
+    tlsCACerts:
+      path: networks/fabric/kareem/crypto-config/ordererOrganizations/pharma-network.com/orderers/orderer1.pharma-network.com/msp/tlscacerts/tlsca.pharma-network.com-cert.pem
+    grpcOptions:
+      ssl-target-name-override: orderer1.pharma-network.com
+  orderer2.pharma-network.com:
+    url: grpcs://orderer2.pharma-network.com:7050
+    tlsCACerts:
+      path: networks/fabric/kareem/crypto-config/ordererOrganizations/pharma-network.com/orderers/orderer2.pharma-network.com/msp/tlscacerts/tlsca.pharma-network.com-cert.pem
+    grpcOptions:
+      ssl-target-name-override: orderer2.pharma-network.com
+  orderer3.pharma-network.com:
+    url: grpcs://orderer3.pharma-network.com:7050
+    tlsCACerts:
+      path: networks/fabric/kareem/crypto-config/ordererOrganizations/pharma-network.com/orderers/orderer3.pharma-network.com/msp/tlscacerts/tlsca.pharma-network.com-cert.pem
+    grpcOptions:
+      ssl-target-name-override: orderer3.pharma-network.com
+
+peers:
+  peer0.eda.pharma-network.com:
+    url: grpcs://peer0.eda.pharma-network.com:17051
+    tlsCACerts:
+      path: networks/fabric/kareem/crypto-config/peerOrganizations/eda.pharma-network.com/peers/peer0.eda.pharma-network.com/tls/ca.crt
+    grpcOptions:
+      ssl-target-name-override: peer0.eda.pharma-network.com
+  peer1.eda.pharma-network.com:
+    url: grpcs://peer1.eda.pharma-network.com:18051
+    tlsCACerts:
+      path: networks/fabric/kareem/crypto-config/peerOrganizations/eda.pharma-network.com/peers/peer1.eda.pharma-network.com/tls/ca.crt
+    grpcOptions:
+      ssl-target-name-override: peer1.eda.pharma-network.com
+  peer0.manufacturer.pharma-network.com:
+    url: grpcs://peer0.manufacturer.pharma-network.com:7051
+    tlsCACerts:
+      path: networks/fabric/kareem/crypto-config/peerOrganizations/manufacturer.pharma-network.com/peers/peer0.manufacturer.pharma-network.com/tls/ca.crt
+    grpcOptions:
+      ssl-target-name-override: peer0.manufacturer.pharma-network.com
+  peer0.distributor.pharma-network.com:
+    url: grpcs://peer0.distributor.pharma-network.com:9051
+    tlsCACerts:
+      path: networks/fabric/kareem/crypto-config/peerOrganizations/distributor.pharma-network.com/peers/peer0.distributor.pharma-network.com/tls/ca.crt
+    grpcOptions:
+      ssl-target-name-override: peer0.distributor.pharma-network.com
+  peer0.retailer.pharma-network.com:
+    url: grpcs://peer0.retailer.pharma-network.com:11051
+    tlsCACerts:
+      path: networks/fabric/kareem/crypto-config/peerOrganizations/retailer.pharma-network.com/peers/peer0.retailer.pharma-network.com/tls/ca.crt
+    grpcOptions:
+      ssl-target-name-override: peer0.retailer.pharma-network.com
+
+certificateAuthorities:
+  ca.eda.pharma-network.com:
+    url: http://ca.eda.pharma-network.com:12054
+    httpOptions:
+      verify: false

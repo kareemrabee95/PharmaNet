@@ -1,0 +1,218 @@
+# aggregate.py validate
+PASS stress-read-2w-rep1-extra
+       [OK] finished
+       [OK] 5/5 rounds have a result row
+       [INFO] no "Finished round" line for: drift_viewDrugCurrentState_tps10 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-read-2w-rep1
+       [OK] finished
+       [OK] 31/31 rounds have a result row
+       [OK] CPU pinning held until the end
+       [INFO] 20 crash(es), all inside the overload tail (expected)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-read-2w-rep2-extra
+       [OK] finished
+       [OK] 5/5 rounds have a result row
+       [INFO] no "Finished round" line for: drift_viewDrugCurrentState_tps10 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-read-2w-rep2
+       [OK] finished
+       [OK] 31/31 rounds have a result row
+       [OK] CPU pinning held until the end
+       [INFO] 19 crash(es), all inside the overload tail (expected)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-read-2w-rep3-extra
+       [OK] finished
+       [OK] 5/5 rounds have a result row
+       [INFO] no "Finished round" line for: drift_viewDrugCurrentState_tps10 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-read-2w-rep3
+       [OK] finished
+       [OK] 31/31 rounds have a result row
+       [OK] CPU pinning held until the end
+       [INFO] 19 crash(es), all inside the overload tail (expected)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-read-4w-rep1
+       [OK] finished
+       [OK] 34/34 rounds have a result row
+       [OK] CPU pinning held until the end
+       [INFO] 20 crash(es), all inside the overload tail (expected)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-read-4w-rep2
+       [OK] finished
+       [OK] 34/34 rounds have a result row
+       [OK] CPU pinning held until the end
+       [INFO] 21 crash(es), all inside the overload tail (expected)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-read-4w-rep3
+       [OK] finished
+       [OK] 34/34 rounds have a result row
+       [OK] CPU pinning held until the end
+       [INFO] 20 crash(es), all inside the overload tail (expected)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-read-8w-rep1
+       [OK] finished
+       [OK] 34/34 rounds have a result row
+       [OK] CPU pinning held until the end
+       [INFO] 20 crash(es), all inside the overload tail (expected)
+       [INFO] generator-limited rounds: queryAllCompanies_tps80 (send 68)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-read-8w-rep2
+       [OK] finished
+       [OK] 34/34 rounds have a result row
+       [OK] CPU pinning held until the end
+       [INFO] 20 crash(es), all inside the overload tail (expected)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-read-8w-rep3
+       [OK] finished
+       [OK] 34/34 rounds have a result row
+       [OK] CPU pinning held until the end
+       [INFO] 20 crash(es), all inside the overload tail (expected)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-2w-rep1-extra
+       [OK] finished
+       [OK] 6/6 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_1 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [INFO] generator-limited rounds: addDrug_tps240 (send 213), addDrug_tps280 (send 248), addDrug_tps320 (send 253)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-2w-rep1
+       [OK] finished
+       [OK] 20/20 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_3 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-2w-rep2-extra
+       [OK] finished
+       [OK] 6/6 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_1 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [INFO] generator-limited rounds: addDrug_tps320 (send 269)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-2w-rep2
+       [OK] finished
+       [OK] 20/20 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_3 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-2w-rep3-extra
+       [OK] finished
+       [OK] 6/6 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_1 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [INFO] generator-limited rounds: addDrug_tps280 (send 255), addDrug_tps320 (send 253)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-2w-rep3
+       [OK] finished
+       [OK] 20/20 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_3 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-4w-rep1-extra
+       [OK] finished
+       [OK] 5/5 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_1 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-4w-rep1
+       [OK] finished
+       [OK] 29/29 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_3 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-4w-rep2-extra
+       [OK] finished
+       [OK] 5/5 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_1 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-4w-rep2
+       [OK] finished
+       [OK] 29/29 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_3 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [INFO] generator-limited rounds: registerCompany_tps320 (send 129)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-4w-rep3-extra
+       [OK] finished
+       [OK] 5/5 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_1 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-4w-rep3
+       [OK] finished
+       [OK] 29/29 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_3 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-8w-rep1
+       [OK] finished
+       [OK] 29/29 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_3 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [INFO] generator-limited rounds: registerCompany_tps320 (send 249)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-8w-rep2
+       [OK] finished
+       [OK] 29/29 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_3 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [INFO] generator-limited rounds: registerCompany_tps320 (send 248)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+PASS stress-write-8w-rep3
+       [OK] finished
+       [OK] 29/29 rounds have a result row
+       [INFO] no "Finished round" line for: cooldown_3 (result row present, so the round ran)
+       [OK] CPU pinning held until the end
+       [OK] no container crashes
+       [INFO] generator-limited rounds: createPO_tps320 (send 303)
+       [OK] dataset seeded and verified (2000 companies, 4000 pouches)
+       [OK] meta snapshots present, endorsements/write tx = 4.33
+
+27 runs/groups: 27 PASS, 0 WARN, 0 FAIL

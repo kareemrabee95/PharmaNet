@@ -1,0 +1,417 @@
+# run-id   : endorse-eda
+# started  : 2026-11-15T08:17:25+02:00
+# command  : caliper launch manager --caliper-workspace /hyperledger/caliper/workspace --caliper-benchconfig benchmarks/scenario/simple/kareem/generated/endorse-eda.yaml --caliper-networkconfig networks/fabric/kareem/network-config.yaml --caliper-report-path /hyperledger/caliper/reports/endorse-eda.html
+2026.11.15-06:17:26.126 info  [caliper] [cli-launch-manager] 	Binding specification is present, performing binding for "fabric:2.2"
+2026.11.15-06:17:26.131 warn  [caliper] [bind] 	Working directory is not specified. Current path: "/hyperledger/caliper/workspace"
+2026.11.15-06:17:26.131 info  [caliper] [bind] 	User-provided arguments for npm: "-g"
+2026.11.15-06:17:26.131 info  [caliper] [bind] 	Binding for fabric@2.2. This might take some time...
+2026.11.15-06:17:26.132 info  [caliper] [bind] 	Using working directory: /hyperledger/caliper/workspace
+2026.11.15-06:17:26.133 info  [caliper] [bind] 	Calling npm with: install -g fabric-network@2.2.20
+npm WARN deprecated node-abort-controller@3.1.1: This package is no longer needed on supported Node.js versions. Node.js 16+ includes AbortController and AbortSignal as built-in globals. All Node.js versions requiring this polyfill are end-of-life. Use the built-in globals instead.
+npm WARN deprecated jsrsasign@10.9.0: This package is no longer maintained.
+
+changed 102 packages in 40s
+
+17 packages are looking for funding
+  run `npm fund` for details
+2026.11.15-06:18:06.984 info  [caliper] [cli-launch-manager] 	Set workspace path: /hyperledger/caliper/workspace
+2026.11.15-06:18:06.984 info  [caliper] [cli-launch-manager] 	Set benchmark configuration path: /hyperledger/caliper/workspace/benchmarks/scenario/simple/kareem/generated/endorse-eda.yaml
+2026.11.15-06:18:06.985 info  [caliper] [cli-launch-manager] 	Set network configuration path: /hyperledger/caliper/workspace/networks/fabric/kareem/network-config.yaml
+2026.11.15-06:18:06.985 info  [caliper] [cli-launch-manager] 	Set SUT type: fabric
+2026.11.15-06:18:06.995 info  [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2026.11.15-06:18:06.996 info  [caliper] [caliper-engine] 	Starting benchmark flow
+2026.11.15-06:18:06.996 info  [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.start" is not present, skipping start command
+2026.11.15-06:18:07.971 info  [caliper] [FabricConnectorFactory] 	Initializing gateway connector compatible with installed SDK: 2.2.20
+2026.11.15-06:18:07.990 info  [caliper] [IdentityManager] 	Adding Admin@eda (admin=false) as Admin@eda for organization EdaOrgMSP
+2026.11.15-06:18:08.001 info  [caliper] [IdentityManager] 	Adding Admin@manufacturer (admin=false) as _manufacturerMSP_Admin@manufacturer for organization manufacturerMSP
+2026.11.15-06:18:08.003 info  [caliper] [IdentityManager] 	Adding Admin@distributor (admin=false) as _distributorMSP_Admin@distributor for organization distributorMSP
+2026.11.15-06:18:08.006 info  [caliper] [IdentityManager] 	Adding Admin@retailer (admin=false) as _retailerMSP_Admin@retailer for organization retailerMSP
+2026.11.15-06:18:08.008 info  [caliper] [IdentityManager] 	Adding Admin@consumer (admin=false) as _consumerMSP_Admin@consumer for organization consumerMSP
+2026.11.15-06:18:08.011 info  [caliper] [IdentityManager] 	Adding Admin@transporter (admin=false) as _transporterMSP_Admin@transporter for organization transporterMSP
+2026.11.15-06:18:08.015 info  [caliper] [connectors/v2/FabricGateway] 	Fabric SDK version: 2.2.20; TLS based on EdaOrgMSP: server
+2026.11.15-06:18:08.016 info  [caliper] [caliper-engine] 	Executed "init" step in 0.004 seconds
+2026.11.15-06:18:08.016 warn  [caliper] [connectors/v2/FabricGateway] 	Install smart contract not available with Fabric SDK version: 2.2.20
+2026.11.15-06:18:08.017 info  [caliper] [caliper-engine] 	Executed "install" step in 0.001 seconds
+2026.11.15-06:18:08.022 info  [caliper] [monitor.js] 	Attempting to create resource monitor of type prometheus
+2026.11.15-06:18:08.026 info  [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2026.11.15-06:18:08.030 info  [caliper] [round-orchestrator] 	Preparing worker connections
+2026.11.15-06:18:08.030 info  [caliper] [worker-orchestrator] 	Launching worker 1 of 1
+2026.11.15-06:18:08.038 info  [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2026.11.15-06:18:08.038 info  [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2026.11.15-06:18:08.039 info  [caliper] [worker-orchestrator] 	Waiting for 1 workers to be connected...
+2026.11.15-06:18:08.592 info  [caliper] [cli-launch-worker] 	Worker is a locally forked process, skipping the binding step, already performed by the manager process
+2026.11.15-06:18:08.594 info  [caliper] [cli-launch-worker] 	Set workspace path: /hyperledger/caliper/workspace
+2026.11.15-06:18:08.594 info  [caliper] [cli-launch-worker] 	Set benchmark configuration path: /hyperledger/caliper/workspace/benchmarks/scenario/simple/kareem/generated/endorse-eda.yaml
+2026.11.15-06:18:08.594 info  [caliper] [cli-launch-worker] 	Set network configuration path: /hyperledger/caliper/workspace/networks/fabric/kareem/network-config.yaml
+2026.11.15-06:18:08.595 info  [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2026.11.15-06:18:08.639 info  [caliper] [worker-orchestrator] 	1 workers connected, progressing to worker assignment phase.
+2026.11.15-06:18:08.640 info  [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2026.11.15-06:18:08.640 info  [caliper] [worker-orchestrator] 	Waiting for 1 workers to be assigned...
+2026.11.15-06:18:08.708 info  [caliper] [worker-orchestrator] 	1 workers assigned, progressing to worker initialization phase.
+2026.11.15-06:18:08.708 info  [caliper] [worker-orchestrator] 	Waiting for 1 workers to be ready...
+2026.11.15-06:18:08.709 info  [caliper] [worker-message-handler] 	Initializing Worker#0...
+2026.11.15-06:18:09.569 info  [caliper] [FabricConnectorFactory] 	Initializing gateway connector compatible with installed SDK: 2.2.20
+2026.11.15-06:18:09.590 info  [caliper] [IdentityManager] 	Adding Admin@eda (admin=false) as Admin@eda for organization EdaOrgMSP
+2026.11.15-06:18:09.596 info  [caliper] [IdentityManager] 	Adding Admin@manufacturer (admin=false) as _manufacturerMSP_Admin@manufacturer for organization manufacturerMSP
+2026.11.15-06:18:09.600 info  [caliper] [IdentityManager] 	Adding Admin@distributor (admin=false) as _distributorMSP_Admin@distributor for organization distributorMSP
+2026.11.15-06:18:09.622 info  [caliper] [IdentityManager] 	Adding Admin@retailer (admin=false) as _retailerMSP_Admin@retailer for organization retailerMSP
+2026.11.15-06:18:09.624 info  [caliper] [IdentityManager] 	Adding Admin@consumer (admin=false) as _consumerMSP_Admin@consumer for organization consumerMSP
+2026.11.15-06:18:09.626 info  [caliper] [IdentityManager] 	Adding Admin@transporter (admin=false) as _transporterMSP_Admin@transporter for organization transporterMSP
+2026.11.15-06:18:09.629 info  [caliper] [worker-message-handler] 	Worker#0 initialized
+2026.11.15-06:18:09.630 info  [caliper] [worker-orchestrator] 	1 workers ready, progressing to test preparation phase.
+2026.11.15-06:18:09.630 info  [caliper] [round-orchestrator] 	Started round 1 (endorse_eda)
+2026.11.15-06:18:09.631 info  [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2026.11.15-06:18:09.637 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity Admin@eda to a Network Gateway
+2026.11.15-06:18:10.040 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity Admin@eda to a Network Gateway
+2026.11.15-06:18:10.041 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user Admin@eda
+2026.11.15-06:18:10.043 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity _manufacturerMSP_Admin@manufacturer to a Network Gateway
+2026.11.15-06:18:10.269 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity _manufacturerMSP_Admin@manufacturer to a Network Gateway
+2026.11.15-06:18:10.269 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user _manufacturerMSP_Admin@manufacturer
+2026.11.15-06:18:10.272 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity _distributorMSP_Admin@distributor to a Network Gateway
+2026.11.15-06:18:10.469 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity _distributorMSP_Admin@distributor to a Network Gateway
+2026.11.15-06:18:10.470 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user _distributorMSP_Admin@distributor
+2026.11.15-06:18:10.478 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity _retailerMSP_Admin@retailer to a Network Gateway
+2026.11.15-06:18:10.667 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity _retailerMSP_Admin@retailer to a Network Gateway
+2026.11.15-06:18:10.667 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user _retailerMSP_Admin@retailer
+2026.11.15-06:18:10.669 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity _consumerMSP_Admin@consumer to a Network Gateway
+2026.11.15-06:18:10.871 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity _consumerMSP_Admin@consumer to a Network Gateway
+2026.11.15-06:18:10.872 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user _consumerMSP_Admin@consumer
+2026.11.15-06:18:10.873 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity _transporterMSP_Admin@transporter to a Network Gateway
+2026.11.15-06:18:11.088 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity _transporterMSP_Admin@transporter to a Network Gateway
+2026.11.15-06:18:11.088 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user _transporterMSP_Admin@transporter
+2026.11.15-06:18:11.089 info  [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+[Worker 0] registerCompany stress mode tag=ep
+2026.11.15-06:18:11.092 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user Admin@eda
+2026.11.15-06:18:11.094 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user _manufacturerMSP_Admin@manufacturer
+2026.11.15-06:18:11.094 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user _distributorMSP_Admin@distributor
+2026.11.15-06:18:11.095 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user _retailerMSP_Admin@retailer
+2026.11.15-06:18:11.095 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user _consumerMSP_Admin@consumer
+2026.11.15-06:18:11.096 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user _transporterMSP_Admin@transporter
+2026.11.15-06:18:11.096 info  [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2026.11.15-06:18:11.097 info  [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2026.11.15-06:18:11.099 info  [caliper] [worker-orchestrator] 	1 workers prepared, progressing to test phase.
+2026.11.15-06:18:11.100 info  [caliper] [round-orchestrator] 	Monitors successfully started
+2026.11.15-06:18:11.103 info  [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2026.11.15-06:18:11.104 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity Admin@eda to a Network Gateway
+2026.11.15-06:18:11.313 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity Admin@eda to a Network Gateway
+2026.11.15-06:18:11.313 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user Admin@eda
+2026.11.15-06:18:11.313 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity _manufacturerMSP_Admin@manufacturer to a Network Gateway
+2026.11.15-06:18:11.486 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity _manufacturerMSP_Admin@manufacturer to a Network Gateway
+2026.11.15-06:18:11.486 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user _manufacturerMSP_Admin@manufacturer
+2026.11.15-06:18:11.487 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity _distributorMSP_Admin@distributor to a Network Gateway
+2026.11.15-06:18:11.685 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity _distributorMSP_Admin@distributor to a Network Gateway
+2026.11.15-06:18:11.685 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user _distributorMSP_Admin@distributor
+2026.11.15-06:18:11.686 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity _retailerMSP_Admin@retailer to a Network Gateway
+2026.11.15-06:18:11.898 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity _retailerMSP_Admin@retailer to a Network Gateway
+2026.11.15-06:18:11.899 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user _retailerMSP_Admin@retailer
+2026.11.15-06:18:11.899 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity _consumerMSP_Admin@consumer to a Network Gateway
+2026.11.15-06:18:12.107 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity _consumerMSP_Admin@consumer to a Network Gateway
+2026.11.15-06:18:12.108 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user _consumerMSP_Admin@consumer
+2026.11.15-06:18:12.108 info  [caliper] [connectors/v2/FabricGateway] 	Connecting user with identity _transporterMSP_Admin@transporter to a Network Gateway
+2026.11.15-06:18:12.300 info  [caliper] [connectors/v2/FabricGateway] 	Successfully connected user with identity _transporterMSP_Admin@transporter to a Network Gateway
+2026.11.15-06:18:12.300 info  [caliper] [connectors/v2/FabricGateway] 	Generating contract map for user _transporterMSP_Admin@transporter
+2026.11.15-06:18:12.304 info  [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.11.15-06:18:16.126 info  [caliper] [default-observer] 	[endorse_eda Round 0 Transaction Info] - Submitted: 30 Succ: 29 Fail:0 Unfinished:1
+2026.11.15-06:18:21.102 info  [caliper] [default-observer] 	[endorse_eda Round 0 Transaction Info] - Submitted: 81 Succ: 75 Fail:0 Unfinished:6
+2026.11.15-06:18:26.103 info  [caliper] [default-observer] 	[endorse_eda Round 0 Transaction Info] - Submitted: 131 Succ: 125 Fail:0 Unfinished:6
+2026.11.15-06:18:31.104 info  [caliper] [default-observer] 	[endorse_eda Round 0 Transaction Info] - Submitted: 181 Succ: 175 Fail:0 Unfinished:6
+2026.11.15-06:18:33.622 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user Admin@eda
+2026.11.15-06:18:33.627 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user _manufacturerMSP_Admin@manufacturer
+2026.11.15-06:18:33.628 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user _distributorMSP_Admin@distributor
+2026.11.15-06:18:33.628 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user _retailerMSP_Admin@retailer
+2026.11.15-06:18:33.629 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user _consumerMSP_Admin@consumer
+2026.11.15-06:18:33.630 info  [caliper] [connectors/v2/FabricGateway] 	disconnecting gateway for user _transporterMSP_Admin@transporter
+2026.11.15-06:18:33.630 info  [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2026.11.15-06:18:38.637 info  [caliper] [default-observer] 	Resetting txCount indicator count
+2026.11.15-06:18:38.640 info  [caliper] [report-builder] 	### Test result ###
+2026.11.15-06:18:38.653 info  [caliper] [report-builder] 	
++-------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name        | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| endorse_eda | 201  | 0    | 10.1            | 0.75            | 0.06            | 0.35            | 9.9              |
++-------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.11.15-06:18:38.700 info  [caliper] [report-builder] 	### prometheus resource stats ###'
+2026.11.15-06:18:38.731 info  [caliper] [report-builder] 	
++------------------+------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+----------+
+| Metric           | Prometheus Query                                                             | Name                                                                                                                     | Value    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+| CPU% (avg)       | sum(rate(container_cpu_usage_seconds_total{name=~".+"}[1m])) by (name) * 100 | ca.consumer.pharma-network.com                                                                                           | 0.00288  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.distributor.pharma-network.com                                                                                        | 0.00421  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.eda.pharma-network.com                                                                                                | 0.00914  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.manufacturer.pharma-network.com                                                                                       | 0.00708  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.retailer.pharma-network.com                                                                                           | 0.00773  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.transporter.pharma-network.com                                                                                        | 0.00730  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | caliper                                                                                                                  | 88.8     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.consumer.pharma-network.com                                                                                | 0.693    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.distributor.pharma-network.com                                                                             | 0.872    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.eda.pharma-network.com                                                                                     | 0.595    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.manufacturer.pharma-network.com                                                                            | 0.709    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.retailer.pharma-network.com                                                                                | 0.694    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.transporter.pharma-network.com                                                                             | 0.658    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.consumer.pharma-network.com                                                                                | 0.711    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.distributor.pharma-network.com                                                                             | 0.675    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.eda.pharma-network.com                                                                                     | 0.691    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.manufacturer.pharma-network.com                                                                            | 0.667    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.retailer.pharma-network.com                                                                                | 0.635    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.transporter.pharma-network.com                                                                             | 0.582    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.consumer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 0.00135  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.distributor.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 1.49     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.eda.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587          | 1.56     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.manufacturer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587 | 1.66     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.retailer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 1.65     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.transporter.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 0.00124  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.consumer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 0.00177  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.distributor.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 0.000938 |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.eda.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587          | 1.55     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.retailer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 0.00131  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.transporter.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 0.000968 |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | orderer1.pharma-network.com                                                                                              | 2.36     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | orderer2.pharma-network.com                                                                                              | 1.58     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | orderer3.pharma-network.com                                                                                              | 1.94     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.consumer.pharma-network.com                                                                                        | 4.63     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.distributor.pharma-network.com                                                                                     | 5.92     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.eda.pharma-network.com                                                                                             | 5.77     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.manufacturer.pharma-network.com                                                                                    | 6.62     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.retailer.pharma-network.com                                                                                        | 5.78     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.transporter.pharma-network.com                                                                                     | 4.77     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.consumer.pharma-network.com                                                                                        | 4.48     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.distributor.pharma-network.com                                                                                     | 4.06     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.eda.pharma-network.com                                                                                             | 5.41     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.manufacturer.pharma-network.com                                                                                    | 4.72     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.retailer.pharma-network.com                                                                                        | 4.47     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.transporter.pharma-network.com                                                                                     | 4.47     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+| CPU% (max)       | sum(rate(container_cpu_usage_seconds_total{name=~".+"}[1m])) by (name) * 100 | ca.consumer.pharma-network.com                                                                                           | 0.00574  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.distributor.pharma-network.com                                                                                        | 0.00628  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.eda.pharma-network.com                                                                                                | 0.0138   |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.manufacturer.pharma-network.com                                                                                       | 0.0107   |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.retailer.pharma-network.com                                                                                           | 0.0156   |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.transporter.pharma-network.com                                                                                        | 0.0110   |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | caliper                                                                                                                  | 96.9     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.consumer.pharma-network.com                                                                                | 0.722    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.distributor.pharma-network.com                                                                             | 0.895    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.eda.pharma-network.com                                                                                     | 0.603    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.manufacturer.pharma-network.com                                                                            | 0.724    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.retailer.pharma-network.com                                                                                | 0.709    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.transporter.pharma-network.com                                                                             | 0.679    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.consumer.pharma-network.com                                                                                | 0.720    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.distributor.pharma-network.com                                                                             | 0.691    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.eda.pharma-network.com                                                                                     | 0.729    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.manufacturer.pharma-network.com                                                                            | 0.688    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.retailer.pharma-network.com                                                                                | 0.659    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.transporter.pharma-network.com                                                                             | 0.594    |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.consumer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 0.00154  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.distributor.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 2.80     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.eda.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587          | 2.89     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.manufacturer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587 | 3.12     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.retailer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 3.05     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.transporter.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 0.00140  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.consumer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 0.00200  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.distributor.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 0.00117  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.eda.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587          | 2.85     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.retailer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 0.00152  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.transporter.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 0.00110  |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | orderer1.pharma-network.com                                                                                              | 3.00     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | orderer2.pharma-network.com                                                                                              | 1.74     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | orderer3.pharma-network.com                                                                                              | 2.42     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.consumer.pharma-network.com                                                                                        | 5.50     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.distributor.pharma-network.com                                                                                     | 7.98     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.eda.pharma-network.com                                                                                             | 7.76     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.manufacturer.pharma-network.com                                                                                    | 8.40     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.retailer.pharma-network.com                                                                                        | 7.83     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.transporter.pharma-network.com                                                                                     | 5.51     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.consumer.pharma-network.com                                                                                        | 5.25     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.distributor.pharma-network.com                                                                                     | 4.48     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.eda.pharma-network.com                                                                                             | 7.02     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.manufacturer.pharma-network.com                                                                                    | 5.03     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.retailer.pharma-network.com                                                                                        | 5.21     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.transporter.pharma-network.com                                                                                     | 5.12     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+| Memory(MB) (avg) | sum(container_memory_working_set_bytes{name=~".+"}) by (name)                | ca.consumer.pharma-network.com                                                                                           | 7.46     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.distributor.pharma-network.com                                                                                        | 6.28     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.eda.pharma-network.com                                                                                                | 6.91     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.manufacturer.pharma-network.com                                                                                       | 17.7     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.retailer.pharma-network.com                                                                                           | 6.39     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.transporter.pharma-network.com                                                                                        | 7.50     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | caliper                                                                                                                  | 338      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.consumer.pharma-network.com                                                                                | 199      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.distributor.pharma-network.com                                                                             | 228      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.eda.pharma-network.com                                                                                     | 266      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.manufacturer.pharma-network.com                                                                            | 273      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.retailer.pharma-network.com                                                                                | 223      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer0.transporter.pharma-network.com                                                                             | 235      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.consumer.pharma-network.com                                                                                | 260      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.distributor.pharma-network.com                                                                             | 261      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.eda.pharma-network.com                                                                                     | 225      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.manufacturer.pharma-network.com                                                                            | 229      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.retailer.pharma-network.com                                                                                | 223      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | couchdb.peer1.transporter.pharma-network.com                                                                             | 201      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.consumer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 57.5     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.distributor.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 57.0     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.eda.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587          | 40.9     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.manufacturer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587 | 48.3     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.retailer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 58.1     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer0.transporter.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 49.0     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.consumer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 56.0     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.distributor.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 49.1     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.eda.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587          | 50.1     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.retailer.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587     | 51.4     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | dev-peer1.transporter.pharma-network.com-pharmanet_1.1-23828799ac1f4666dbccf62c266dcc51c12ee7cff3a828c97afbca8a5c9b3587  | 46.9     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | orderer1.pharma-network.com                                                                                              | 75.6     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | orderer2.pharma-network.com                                                                                              | 72.9     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | orderer3.pharma-network.com                                                                                              | 102      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.consumer.pharma-network.com                                                                                        | 194      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.distributor.pharma-network.com                                                                                     | 223      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.eda.pharma-network.com                                                                                             | 345      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.manufacturer.pharma-network.com                                                                                    | 211      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.retailer.pharma-network.com                                                                                        | 205      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer0.transporter.pharma-network.com                                                                                     | 198      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.consumer.pharma-network.com                                                                                        | 154      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.distributor.pharma-network.com                                                                                     | 178      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.eda.pharma-network.com                                                                                             | 200      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.manufacturer.pharma-network.com                                                                                    | 179      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.retailer.pharma-network.com                                                                                        | 169      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | peer1.transporter.pharma-network.com                                                                                     | 157      |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+| Memory(MB) (max) | sum(container_memory_working_set_bytes{name=~".+"}) by (name)                | ca.consumer.pharma-network.com                                                                                           | 7.46     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.distributor.pharma-network.com                                                                                        | 6.28     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.eda.pharma-network.com                                                                                                | 6.91     |
+|------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------|
+|                  |                                                                              | ca.manufacturer.pharma-network.com                                                         2026.11.15-06:18:38.753 info  [caliper] [worker-message-handler] 	Worker#0 is exiting
+# finished : 2026-11-15T08:18:38+02:00
+# container crashes during run: 0

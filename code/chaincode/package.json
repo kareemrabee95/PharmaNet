@@ -1,0 +1,53 @@
+{
+  "name": "pharmanet",
+  "version": "0.0.1",
+  "description": "Pharma Network",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+	"scripts": {
+		"lint": "eslint .",
+		"test:view": "mocha test/viewlifecyclecontract.test.js",
+		"test:query": "mocha test/querycontract.test.js",
+		"test": "mocha test/viewlifecyclecontract.test.js test/querycontract.test.js",
+    "start-dev": "fabric-chaincode-node start --peer.address peer0.manufacturer.pharma-network.com:7053 --chaincode-id-name pharmanet:1.1",
+    "start-dev-dist": "fabric-chaincode-node start --peer.address peer0.distributor.pharma-network.com:9053 --chaincode-id-name pharmanet:1.1",
+    "start-dev-trans": "fabric-chaincode-node start --peer.address peer0.transporter.pharma-network.com:15053 --chaincode-id-name pharmanet:1.1",
+    "start-dev-retail": "fabric-chaincode-node start --peer.address peer0.retailer.pharma-network.com:11053 --chaincode-id-name pharmanet:1.1",
+    "start": "fabric-chaincode-node start",
+    "mocha": "mocha test --recursive"
+  },
+  "engineStrict": true,
+  "author": "kareem-Rabee",
+  "dependencies": {
+    "fabric-contract-api": "~2.5.6",
+    "fabric-shim": "~2.5.6"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "chai-as-promised": "^8.0.0",
+    "eslint": "^9.8.0",
+    "mocha": "^10.7.0",
+    "nyc": "^17.0.0",
+    "sinon": "^18.0.0",
+    "sinon-chai": "^4.0.0"
+  },
+  "nyc": {
+    "exclude": [
+      "coverage/**",
+      "test/**"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "all": true,
+    "check-coverage": true,
+    "statements": 100,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100
+  }
+}

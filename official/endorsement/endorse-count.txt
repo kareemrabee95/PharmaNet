@@ -1,0 +1,5 @@
+# endorsements per write transaction (measured with endorse-count.sh)
+identity                tx   proposals   per tx
+registerCompany (EDA)   201       1005   5.00
+addDrug (manufacturer)  201        804   4.00
+createPO (distributor)  201       1005   5.00

@@ -1,0 +1,87 @@
+name: Fabric
+version: "2.0.0"
+mutual-tls: false
+
+caliper:
+  blockchain: fabric
+
+channels:
+  - channelName: pharmachannel
+    create: false
+    contracts:
+      - id: pharmanet
+        version: "1.1"
+        language: node
+
+organizations:
+  - mspid: EdaOrgMSP
+    identities:
+      certificates:
+        - name: 'Admin@eda'
+          clientPrivateKey:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/eda.pharma-network.com/users/Admin@eda.pharma-network.com/msp/keystore/priv_sk
+          clientSignedCert:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/eda.pharma-network.com/users/Admin@eda.pharma-network.com/msp/signcerts/Admin@eda.pharma-network.com-cert.pem
+    connectionProfile:
+      path: networks/fabric/kareem/connection-eda.yaml
+      discover: false
+
+  - mspid: manufacturerMSP
+    identities:
+      certificates:
+        - name: 'Admin@manufacturer'
+          clientPrivateKey:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/manufacturer.pharma-network.com/users/Admin@manufacturer.pharma-network.com/msp/keystore/priv_sk
+          clientSignedCert:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/manufacturer.pharma-network.com/users/Admin@manufacturer.pharma-network.com/msp/signcerts/Admin@manufacturer.pharma-network.com-cert.pem
+    connectionProfile:
+      path: networks/fabric/kareem/connection-manufacturer.yaml
+      discover: false
+
+  - mspid: distributorMSP
+    identities:
+      certificates:
+        - name: 'Admin@distributor'
+          clientPrivateKey:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/distributor.pharma-network.com/users/Admin@distributor.pharma-network.com/msp/keystore/priv_sk
+          clientSignedCert:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/distributor.pharma-network.com/users/Admin@distributor.pharma-network.com/msp/signcerts/Admin@distributor.pharma-network.com-cert.pem
+    connectionProfile:
+      path: networks/fabric/kareem/connection-distributor.yaml
+      discover: false
+
+  - mspid: retailerMSP
+    identities:
+      certificates:
+        - name: 'Admin@retailer'
+          clientPrivateKey:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/retailer.pharma-network.com/users/Admin@retailer.pharma-network.com/msp/keystore/priv_sk
+          clientSignedCert:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/retailer.pharma-network.com/users/Admin@retailer.pharma-network.com/msp/signcerts/Admin@retailer.pharma-network.com-cert.pem
+    connectionProfile:
+      path: networks/fabric/kareem/connection-retailer.yaml
+      discover: false
+
+  - mspid: consumerMSP
+    identities:
+      certificates:
+        - name: 'Admin@consumer'
+          clientPrivateKey:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/consumer.pharma-network.com/users/Admin@consumer.pharma-network.com/msp/keystore/priv_sk
+          clientSignedCert:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/consumer.pharma-network.com/users/Admin@consumer.pharma-network.com/msp/signcerts/Admin@consumer.pharma-network.com-cert.pem
+    connectionProfile:
+      path: networks/fabric/kareem/connection-consumer.yaml
+      discover: false
+
+  - mspid: transporterMSP
+    identities:
+      certificates:
+        - name: 'Admin@transporter'
+          clientPrivateKey:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/transporter.pharma-network.com/users/Admin@transporter.pharma-network.com/msp/keystore/priv_sk
+          clientSignedCert:
+            path: networks/fabric/kareem/crypto-config/peerOrganizations/transporter.pharma-network.com/users/Admin@transporter.pharma-network.com/msp/signcerts/Admin@transporter.pharma-network.com-cert.pem
+    connectionProfile:
+      path: networks/fabric/kareem/connection-transporter.yaml
+      discover: false

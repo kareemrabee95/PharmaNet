@@ -1,0 +1,14 @@
+# Extracted copy of official/reports.zip. Only the archive is versioned (the folder is ~1.5 GB).
+official/reports/
+# Never commit key material or generated crypto
+crypto-config/
+organizations/
+*.pem
+*_sk
+*.key
+# local files
+node_modules/
+__pycache__/
+*.pyc
+*.zip
+.DS_Store
