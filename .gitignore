@@ -12,3 +12,4 @@ __pycache__/
 *.pyc
 *.zip
 .DS_Store
+!official/reports.zip
